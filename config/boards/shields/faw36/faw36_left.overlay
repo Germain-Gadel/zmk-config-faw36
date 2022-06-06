@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "faw36.dtsi"
+
+&kscan0 {
+	col-gpios
+		= <&pro_micro 2	 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 7	 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 3	 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 9	 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 8	 GPIO_ACTIVE_HIGH>
+		;
+};
+
+&left_encoder {
+    status = "okay";
+};

@@ -1,0 +1,13 @@
+file_format: "1"
+id: faw36
+name: FAW36
+type: shield
+url: https://github.com/germain-gadel/zmk-config-faw36
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+  - encoder
+siblings:
+  - faw36_left
+  - faw36_right
