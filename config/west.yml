@@ -6,6 +6,6 @@ manifest:
     - name: zmk
       remote: germain-gadel
       revision: rev1
-      import: config/west.yml
+      import: app/west.yml
   self:
     path: config

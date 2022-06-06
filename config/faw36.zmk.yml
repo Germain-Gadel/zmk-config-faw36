@@ -2,7 +2,7 @@ file_format: "1"
 id: faw36
 name: FAW36
 type: shield
-url: https://github.com/germain-gadel/zmk-config-faw36
+url: https://github.com/germain-gadel/faw36
 requires:
   - seeeduino_xiao_ble
 features:
