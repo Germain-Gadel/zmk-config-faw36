@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: germain-gadel
-      revision: test1
+      remote: benvallack
+      revision: repeatrollfix-tapdance-macro-mouse-dongle
       import: app/west.yml
   self:
     path: config
