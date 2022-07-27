@@ -3,7 +3,7 @@ id: faw36
 name: FAW36
 type: shield
 url: https://github.com/germain-gadel
-requires: [xiao_ble]
+requires: seeeduino_xiao_ble
 features:
   - keys
   - encoder
