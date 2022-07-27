@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: germain-gadel
-      url-base: https://github.com/germain-gadel/zmk-config-faw36
+      url-base: https://github.com/germain-gadel/faw36
   projects:
     - name: zmk
       remote: germain-gadel
