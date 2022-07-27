@@ -1,0 +1,17 @@
+// faw36_left.overlay
+
+#include "faw36.dtsi" // Notice that the main dtsi files are included in the overlay.
+
+&kscan0 {
+    col-gpios
+        = <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+};
+
+&left_encoder {
+    status = "okay";
+};

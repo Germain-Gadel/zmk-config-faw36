@@ -1,19 +1,10 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config ZMK_BLE
-	default y
-
-config ZMK_USB
-	default y
-
 if SHIELD_FAW36_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "FAW36"
+	default "faw36"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+	default y
 
 endif
 
