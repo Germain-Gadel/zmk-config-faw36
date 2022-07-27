@@ -14,7 +14,7 @@
 #board: [ "seeeduino_xiao_ble" ]
 #shield: [ "faw36_left", "faw36_right" ]
 include:
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: faw36_left
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: faw36_right
