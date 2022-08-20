@@ -46,16 +46,16 @@
  * |------+------+------+------+------|        |------+------+------+------+------|
  * |      |   4  |   5  |   6  |   =  |        |  F6  |  F7  |  F8  |  F9  |  F10 |
  * |------+------+------+------+------|        |------+------+------+------+------|
- * |      |   1  |   2  |   3  |   -  |        |  F11 | AF12 |      |      |      |
+ * |RESET |   1  |   2  |   3  |   -  |        |  F11 | AF12 |      |      |      |
  * `-------------+------+------+------|        |------+------+------+-------------'
  *               |   .  |      |      |        |      |      |      |
  *               `--------------------'        `--------------------'
 */
                         bindings = <
-    &kp N0 &kp N7 &kp N8 &kp N9 &trans      &kp F1  &kp F2       &kp F3 &kp F4 &kp F5
-    &trans &kp N4 &kp N5 &kp N6 &kp EQUAL   &kp F6  &kp F7       &kp F8 &kp F9 &kp F10
-    &reset &kp N1 &kp N2 &kp N3 &kp MINUS   &kp F11 &mt RALT F12 &trans &trans &trans
-                 &kp DOT &trans &trans   &trans &trans &trans
+    &kp N0 &kp N7 &kp N8  &kp N9 &trans      &kp F1  &kp F2       &kp F3 &kp F4 &kp F5
+    &trans &kp N4 &kp N5  &kp N6 &kp EQUAL   &kp F6  &kp F7       &kp F8 &kp F9 &kp F10
+    &reset &kp N1 &kp N2  &kp N3 &kp MINUS   &kp F11 &mt RALT F12 &trans &trans &trans
+                  &kp DOT &trans &trans      &trans &trans &trans
                 >;
         };
         sym_layer {
@@ -80,9 +80,9 @@
         arrows_layer {
 /* Arrows
  * ,----------------------------------.        ,----------------------------------.
- * |      |      |      |      |      |        |      |   {  |   }  |   [  |   ]  |
+ * |      |      |      |      |      |        |RESET |   {  |   }  |   [  |   ]  |
  * |------+------+------+------+------|        |------+------+------+------+------|
- * |      |      |      |      |      |        |      |      |      |  Up  |   '  |
+ * |      |      |      |      |      |        |BT_CLR|      |      |  Up  |   '  |
  * |------+------+------+------+------|        |------+------+------+------+------|
  * |      |      |      |      |      |        |      |      | Left | Down | Right|
  * `-------------+------+------+------|        |------+------+------+-------------'
@@ -90,10 +90,10 @@
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &trans &trans &trans &trans &trans   &reset &kp LBRC &kp RBRC &kp LBKT &kp RBKT
-    &trans &trans &trans &trans &trans   &trans &trans   &trans   &kp UP   &kp APOS
-    &trans &trans &trans &trans &trans   &trans &trans   &kp LEFT &kp DOWN &kp RIGHT
-                  &trans &trans &trans   &trans &trans   &trans
+    &trans &trans &trans &trans &trans   &reset     &kp LBRC &kp RBRC &kp LBKT &kp RBKT
+    &trans &trans &trans &trans &trans   &bt BT_CLR &trans   &trans   &kp UP   &kp APOS
+    &trans &trans &trans &trans &trans   &trans     &trans   &kp LEFT &kp DOWN &kp RIGHT
+                  &trans &trans &trans   &trans     &trans   &trans
                 >;
         };
         media_layer {
@@ -118,7 +118,7 @@
         nav_layer {
 /* Navigation
  * ,----------------------------------.        ,----------------------------------.
- * |      |      | PgUp | PgDn | Pscr |        |      |      |      |      |      |
+ * |BT_CLR| BOOT | PgUp | PgDn | Pscr |        |      |      |      |      |      |
  * |------+------+------+------+------|        |------+------+------+------+------|
  * |      |      | Home |  End | Paus |        |      |      |      |      |      |
  * |------+------+------+------+------|        |------+------+------+------+------|
@@ -128,10 +128,10 @@
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &trans &trans &kp PG_UP &kp PG_DN &kp PSCRN         &trans &trans &trans &trans &trans
-    &trans &trans &kp HOME  &kp END   &kp PAUSE_BREAK   &trans &trans &trans &trans &trans
-    &trans &trans &kp INS   &kp DEL   &kp SLCK          &trans &trans &trans &trans &trans
-                  &trans    &trans    &trans            &trans &trans &trans
+    &bt BT_CLR &bootloader &kp PG_UP &kp PG_DN &kp PSCRN         &trans &trans &trans &trans &trans
+    &trans     &trans      &kp HOME  &kp END   &kp PAUSE_BREAK   &trans &trans &trans &trans &trans
+    &trans     &trans      &kp INS   &kp DEL   &kp SLCK          &trans &trans &trans &trans &trans
+                           &trans    &trans    &trans            &trans &trans &trans
                 >;
         };
     };
