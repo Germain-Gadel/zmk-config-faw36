@@ -80,19 +80,19 @@
         arrows_layer {
 /* Arrows
  * ,----------------------------------.        ,----------------------------------.
- * |      |      |      |      |      |        |RESET |   {  |   }  |   [  |   ]  |
+ * |      |      |      |      |      |        |RESET |      |  Up  |      |      |
  * |------+------+------+------+------|        |------+------+------+------+------|
- * |      |      |      |      |      |        |BT_CLR|      |      |  Up  |   '  |
+ * |      |      |      |      |      |        |BT_CLR| Left | Down | Right|   '  |
  * |------+------+------+------+------|        |------+------+------+------+------|
- * |      |      |      |      |      |        |      |      | Left | Down | Right|
+ * |      |      |      |      |      |        |      |      |      |      |      |
  * `-------------+------+------+------|        |------+------+------+-------------'
  *               |      |      |      |        |      |      |      |
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &trans &trans &trans &trans &trans   &reset     &kp LBRC &kp RBRC &kp LBKT &kp RBKT
-    &trans &trans &trans &trans &trans   &bt BT_CLR &trans   &trans   &kp UP   &kp APOS
-    &trans &trans &trans &trans &trans   &trans     &trans   &kp LEFT &kp DOWN &kp RIGHT
+    &trans &trans &trans &trans &trans   &reset     &trans   &kp UP    &trans    &trans
+    &trans &trans &trans &trans &trans   &bt BT_CLR &kp LEFT &tkp DOWN &kp RIGHT &kp APOS
+    &trans &trans &trans &trans &trans   &trans     &trans   &trans    &trans    &trans
                   &trans &trans &trans   &trans     &trans   &trans
                 >;
         };
