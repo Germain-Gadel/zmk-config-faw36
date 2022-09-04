@@ -15,6 +15,11 @@
 #define MEDIA 4
 #define NAV 5
 
+&mt {
+    tapping-term-ms = <300>;
+    flavor = "tap-preferred";
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
