@@ -85,9 +85,9 @@
         arrows_layer {
 /* Arrows
  * ,----------------------------------.        ,----------------------------------.
- * |      |      |      |      |      |        |RESET |      |  Up  |      |      |
+ * |      |      |      |      |      |        |      |      |  Up  |      |      |
  * |------+------+------+------+------|        |------+------+------+------+------|
- * |      |      |      |      |      |        |BT_CLR| Left | Down | Right|   '  |
+ * |      |      |      |      |      |        |      | Left | Down | Right|   '  |
  * |------+------+------+------+------|        |------+------+------+------+------|
  * |      |      |      |      |      |        |      |      |      |      |      |
  * `-------------+------+------+------|        |------+------+------+-------------'
@@ -95,8 +95,8 @@
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &trans &trans &trans &trans &trans   &reset     &trans   &kp UP    &trans    &trans
-    &trans &trans &trans &trans &trans   &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &kp APOS
+    &trans &trans &trans &trans &trans   &trans     &trans   &kp UP    &trans    &trans
+    &trans &trans &trans &trans &trans   &trans &kp LEFT &kp DOWN &kp RIGHT &kp APOS
     &trans &trans &trans &trans &trans   &trans     &trans   &trans    &trans    &trans
                   &trans &trans &trans   &trans     &trans   &trans
                 >;
@@ -104,9 +104,9 @@
         media_layer {
 /* Media
  * ,----------------------------------.        ,----------------------------------.
- * |      |      |      |      |      |        |      |      |      |      |      |
+ * |      |      |      |      |      |        |RESET |      |      |      |      |
  * |------+------+------+------+------|        |------+------+------+------+------|
- * |      |      |      |      |      |        |      |      |PTrack| Vol+ |NTrack|
+ * |      |      |      |      |      |        |BT_CLR|      |PTrack| Vol+ |NTrack|
  * |------+------+------+------+------|        |------+------+------+------+------|
  * |      |      |      |      |      |        |      |      | Prev | Vol- | Next |
  * `-------------+------+------+------|        |------+------+------+-------------'
@@ -114,9 +114,9 @@
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &trans &trans &trans &trans &trans   &trans   &trans     &trans     &trans       &trans
-    &trans &trans &trans &trans &trans   &trans   &trans     &kp C_FF   &kp C_VOL_UP &kp C_RW
-    &trans &trans &trans &trans &trans   &trans   &trans     &kp C_PREV &kp C_VOL_DN &kp C_NEXT
+    &trans &trans &trans &trans &trans   &trans   &reset      &trans     &trans       &trans
+    &trans &trans &trans &trans &trans   &trans   &bt BT_CLR  &kp C_RW   &kp C_VOL_UP &kp C_FF
+    &trans &trans &trans &trans &trans   &trans   &trans      &kp C_PREV &kp C_VOL_DN &kp C_NEXT
                   &trans &trans &trans   &kp C_PP &kp C_MUTE &trans
                 >;
         };
